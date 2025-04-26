@@ -2,11 +2,11 @@ import streamlit as st
 import google.generativeai as genai
 
 st.set_page_config(page_title="AI Instagram Caption Generator")
-# st.title("AI Instagram Caption Generator")
-# api_key = st.secrets.get("GEMINI_API_KEY")
+st.title("AI Instagram Caption Generator")
+api_key = st.secrets.get("google")
 
-# if not api_key:
-#     api_key = st.text_input("Enter your Gemini API Key: " , type="password")
+if not api_key:
+    api_key = st.text_input("Enter your Gemini API Key: " , type="password")
 
 if api_key:
     # genai.configure(api_key=api_key)
